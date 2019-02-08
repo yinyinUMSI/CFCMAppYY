@@ -15,7 +15,7 @@ web app based on this stack.
 To create your own application based on this one, first create a new git
 repository (e.g. on github).  Next, clone this repo:
 
-    $ git clone https://github.com/elplatt/FlaskBackbone-Skeleton.git MyApp
+    $ git clone https://github.com/elplatt/Flask-Backbone-Skeleton.git MyApp
     
 
 ## Forking
