@@ -39,35 +39,6 @@ configuration file.
 
 pip install requirements.txt
 
-### Configuration
-
-To configure, copy the sample configuration file and fill it in with your info.
-
-    $ cp app.config.sample app.config
-
-## Managing Users
-The command line tool `userconfig` can be used to add, modify, and remove users.
-
-To see usage, just run `userconfig` with no arguments:
-
-    $ ./userconfig
-    Usage:
-      userconfig add <username> <password>
-      userconfig remove <username>
-      userconfig password <username> <password>
-
-To add a user named `alice` with password `topsecret`:
-
-    $ ./userconfig add alice topsecret
-    
-To change the password for user `alice` to `bettersecret`:
-
-    $ ./userconfig password alice bettersecret
-    
-To remove user `alice`:
-
-    $ ./userconfig remove alice
-
 ## Running
 
 To run the app locally, just run `server.py`:
