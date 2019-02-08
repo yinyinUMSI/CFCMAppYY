@@ -43,4 +43,6 @@ pip install requirements.txt
 To run the app locally, just run `server.py`:
 
     $ python server.py
+    
+You should now be able to visit the site by opening a web browser and navigating to `http://localhost:5000`.
 
