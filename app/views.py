@@ -5,8 +5,8 @@ import flask_login
 import pymongo
 
 from app import app, login_manager
-from user import User, authenticate_user
-from forms import *
+from app.user import User, authenticate_user
+from app.forms import *
 
 @app.route('/')
 def index():

@@ -5,17 +5,22 @@ bootstrap.js stack.  You can use it as a starting point to create your own
 web app based on this stack.
 
 ## Contents
-* [Forking](#forking)
 * [Installation](#installation)
+* [Forking](#forking)
+* [Setup](#setup)
 * [Managing Users](#managing-users)
 * [Running](#running)
 
-## Forking
+
+## Installing
 To create your own application based on this one, first create a new git
 repository (e.g. on github).  Next, clone this repo:
 
-    $ git clone https://github.com/c4fcm/Skeleton-App.git MyApp
+    $ git clone https://github.com/elplatt/FlaskBackbone-Skeleton.git MyApp
     
+
+## Forking
+If you would like to create a repository for your new app, first create an empty git repository.
 Then change the origin on the cloned repo to the repo for your new app,
 and push.
 
@@ -32,9 +37,7 @@ configuration file.
 
 ### Dependencies
 
-* flask
-* flask-login
-* pymongo
+pip install requirements.txt
 
 ### Configuration
 

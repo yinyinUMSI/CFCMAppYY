@@ -1,12 +1,12 @@
 
-import ConfigParser
+import configparser
 
 import flask
 import flask_login
 import pymongo
 
 # Load configuration
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.read('app.config')
 
 # Flask app
@@ -20,7 +20,8 @@ login_manager.init_app(app)
 # Connect to db
 host = config.get('database', 'host')
 database = config.get('database', 'database')
-db = pymongo.Connection(host)[database]
+client = pymongo.MongoClient(host)
+db = client[database]
 
 # Set up routes and content
 from app import views
