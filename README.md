@@ -8,7 +8,6 @@ web app based on this stack.
 * [Installation](#installation)
 * [Forking](#forking)
 * [Setup](#setup)
-* [Managing Users](#managing-users)
 * [Running](#running)
 
 
