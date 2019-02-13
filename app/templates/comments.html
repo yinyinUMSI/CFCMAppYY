@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-<script type="text/javascript" src={{url_for('static',filename='formSubmit.js')}}></script>
+
 {% block page_title %}
     CFCM Comments
 {% endblock %}
@@ -11,12 +11,23 @@
 {#next gonna be the form in content#}
 {% block content %}
 {{super()}}
-	<form action="/commentsResult/">
+	<!-- <form action="/comments/">
 		<label for="inputText">Random input field:</label>
 		<input class="form-control" type="text" name="inputText" id="inputText" value="default">
-		<input type="submit" value="submit" class="btn btn-primary" onclick="document.getElementById('addedText').innerHTML = Date()">
-		<p id="addedText"></p>
-	</form>
+		<input type="submit" value="submit" class="btn btn-primary">		
+	</form> -->
+	<p id="addText"></p>
+	<input class="form-control" type="text" name="inputText" id="inputText" value="default">
+	<button value="submit2" onclick = "addText()">submit2</button>
+	<script>
+		
+		function addText() {
+			let element = document.getElementById("addText");
+			let value = document.getElementById("inputText").value;
+			element.innerHTML = value;
+		}
+
+	</script>
 {% endblock %}
 
 {% block footer %}

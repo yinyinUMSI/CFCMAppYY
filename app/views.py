@@ -13,13 +13,9 @@ def index():
 
 @app.route('/comments/')
 def commentPage():
-    content = '<p>Hello I\'m comment page.<p>'
+    # content = '<p>Hello I\'m comment page.<p>'
+    content = request.args.get('inputText')
     return flask.render_template('comments.html', content=content)
 
-@app.route('/commentsResult/')
-def commentResult():
-	if request.method == 'GET':
 
-	    content = request.args.get('inputText')
-	    return flask.render_template('comments.html', content=content)
 
